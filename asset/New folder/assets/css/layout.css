@@ -59,8 +59,7 @@ header {
   outline: none;
 }
 
-.icons-container {
-  border-right: 1px solid var(--secondary-text);
+.icons-container { 
   padding: 0px 10px;
 }
 
