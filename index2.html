@@ -1,11 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damage Whilst Driven – At Fault – Motor PI | Suncorp</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         HEADER / TOP NAVIGATION
+         ============================================ -->
+    <!-- HEADER NAVBAR -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="logo">SUNCORP</h1>
+        <div class="logo-dot"></div>
+      </div>
+
+      <div class="header-center"></div>
+
+      <div class="header-right">
+        <!-- Search -->
+        <div class="search-container-header">
+          <img
+            src="asset/icons/search_tool.svg"
+            alt="Search"
+            class="icon search-icon"
+          />
+          <input type="text" class="search-input" placeholder="Search..." />
+        </div>
+
+        <!-- Help -->
+        <button class="icon-btn" title="Help">
+          <img
+            src="asset/icons/help_icon.svg"
+            style="height: 28px; width: 28px"
+            alt="Help"
+            class="icon"
+          />
+        </button>
+
+        <!-- Notifications -->
+        <button class="icon-btn" title="Notifications">
+          <img
+            src="asset/icons/notification_icon.svg"
+            style="height: 28px; width: 28px"
+            alt="Notifications"
+            class="icon"
+          />
+        </button>
+
+        <!-- Settings -->
+        <button class="icon-btn" title="Settings">
+          <img
+            src="asset/icons/cog.svg"
+            alt="Settings"
+            style="height: 35px; width: 35px"
+            class="icon"
+          />
+        </button>
+
+        <!-- Divider -->
+        <div class="header-divider"></div>
+
+        <!-- User Profile with name and dropdown -->
+        <div class="user-profile">
+          <img
+            src="asset/icons/user.svg"
+            alt="User Profile"
+            style="height: 24px; width: 24px"
+            class="icon user-avatar"
+          />
+          <span class="user-name">Sharon Quinn Grady</span>
+          <img
+            style="transform: rotate(90deg); height: 16px"
+            src="asset/icons/arrow_icon.svg"
+            alt="Dropdown"
+            class="icon dropdown-arrow"
+          />
+        </div>
+
+        <!-- Apps / Nine Dots Icon -->
+        <button class="icon-btn" title="Apps">
+          <span style="height: 24px; width: 24px" class="material-icons"
+            >apps</span
+          >
+        </button>
+      </div>
+    </header>
+    <!-- ============================================
+         MAIN LAYOUT CONTAINER
+         ============================================ -->
+    <div class="container">
+      <!-- ============================================
+             SIDEBAR
+             ============================================ -->
+      <!-- SIDEBAR NAVIGATION -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <!-- 1. Hamburger/Menu Icon -->
+          <button class="nav-item" title="Menu">
+            <img src="asset/icons/menu.svg" alt="Menu" class="icons" />
+          </button>
+
+          <!-- 2. Home Icon -->
+          <button class="nav-item" title="Home">
+            <span class="material-icons">house</span>
+          </button>
+          <!-- 3. Apps Icon -->
+          <button class="nav-item" title="Applications">
+            <div
+              class="nav-label"
+              style="
+                font-size: 9.85px;
+                color: var(--dark-bg);
+                text-align: center;
+              "
+            >
+              Apps
+            </div>
+            <img
+              src="asset/icons/applications_icon.svg"
+              alt="Apps"
+              class="icons"
+            />
+          </button>
+
+          <!-- Divider -->
+          <hr class="nav-divider" />
+
+          <!-- 4. List Icon -->
+          <button class="nav-item" title="List">
+            <div
+              class="nav-label"
+              style="
+                font-size: 9.85px;
+                color: var(--dark-bg);
+                text-align: center;
+              "
+            >
+              Links
+            </div>
+            <img
+              src="asset/icons/my_claims_icons.svg"
+              style="height: 30px; width: 30px"
+              alt="List"
+              class="icons"
+            />
+          </button>
+
+          <!-- 5. Share Icon -->
+          <button class="nav-item" title="Share">
+            <img
+              src="asset/icons/referral_icon.svg"
+              style="height: 30px; width: 30px"
+              alt="Share"
+              class="icons"
+            />
+          </button>
+
+          <!-- 6. Refresh/Sync Icon -->
+          <button class="nav-item" title="Refresh">
+            <img
+              src="asset/icons/audit_icon.svg"
+              style="height: 30px; width: 30px"
+              alt="Refresh"
+              class="icons"
+            />
+          </button>
+
+          <!-- 7. Settings/Gear Icon -->
+          <button class="nav-item" title="Settings">
+            <img
+              src="asset/icons/cog.svg"
+              alt="Settings"
+              style="height: 35px; width: 35px"
+              class="icons"
+            />
+          </button>
+        </nav>
+      </aside>
+
+      <!-- ============================================
+             MAIN CONTENT
+             ============================================ -->
+      <main>
+        <div class="content-wrapper">
+          <!-- Breadcrumb -->
+          <nav class="breadcrumb">
+            <a href="#" class="breadcrumb-link">← Back to Groups</a>
+          </nav>
+
+          <!-- Page Header -->
+          <div class="page-headers">
+            <h1 class="page-title">
+              Damage Whilst Driven – At Fault – Motor PI
+            </h1>
+            <button class="edit-icon" title="Edit">
+              <img
+                src="asset/icons/edit_icon.svg"
+                alt="Back"
+                class="iconss" 
+              />
+            </button>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs-container">
+            <button class="tab active">Define Group</button>
+            <button class="tab">Group Rule</button>
+            <button class="tab">Group Configuration & Tags</button>
+            <button class="tab">Group Audit History</button>
+          </div>
+
+          <!-- Definition Section -->
+          <section class="definition-section">
+            <div class="section-header">
+              <span>Edit Group Definitions</span>
+              <span class="section-actions">Actions</span>
+            </div>
+
+            <!-- Definition Rows -->
+            <div class="definition-rows">
+              <!-- Row 1 -->
+              <div class="definition-row">
+                <select class="operator-select"></select>
+                <select class="label-select">
+                  <option>Claim Loss Cause</option>
+                </select>
+                <select class="condition-select">
+                  <option>is in</option>
+                </select>
+                <select class="value-select">
+                  <option>
+                    Damage whilst Driven, Damage whilst Driven/Towed
+                  </option>
+                </select>
+                <button class="icon-btn">⋮</button>
+                <button class="icon-btn delete-btn">🗑️</button>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="definition-row">
+                <select class="operator-select">
+                  <option>AND</option>
+                </select>
+                <select class="label-select">
+                  <option>Fault Status</option>
+                </select>
+                <select class="condition-select">
+                  <option>is in</option>
+                </select>
+                <select class="value-select">
+                  <option>At Fault</option>
+                </select>
+                <button class="icon-btn">⋮</button>
+                <button class="icon-btn delete-btn">🗑️</button>
+              </div>
+
+              <!-- Row 3 -->
+              <div class="definition-row">
+                <select class="operator-select">
+                  <option>AND</option>
+                </select>
+                <select class="label-select">
+                  <option>Vehicle Style</option>
+                </select>
+                <select class="condition-select">
+                  <option>is in</option>
+                </select>
+                <select class="value-select">
+                  <option>Boat</option>
+                </select>
+                <button class="icon-btn">⋮</button>
+                <button class="icon-btn delete-btn">🗑️</button>
+              </div>
+
+              <!-- Row 4 -->
+              <div class="definition-row">
+                <select class="operator-select">
+                  <option>AND</option>
+                </select>
+                <select class="label-select">
+                  <option>Claim</option>
+                </select>
+                <select class="condition-select">
+                  <option>is in</option>
+                </select>
+                <select class="value-select">
+                  <option>Two</option>
+                </select>
+                <button class="icon-btn">⋮</button>
+                <button class="icon-btn delete-btn">🗑️</button>
+              </div>
+            </div>
+
+            <!-- Add New Row Button -->
+            <button class="add-row-btn" title="Add new definition row">
+              +
+            </button>
+          </section>
+        </div>
+
+        <!-- ============================================
+                 FOOTER / SAVE BUTTON
+                 ============================================ -->
+        <div class="footer-actions">
+          <button class="save-btn">Save</button>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

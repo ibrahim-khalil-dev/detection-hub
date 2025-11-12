@@ -278,54 +278,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Optional: Add arrow */
-.tooltip::before {
-  content: "";
-  position: absolute;
-  bottom: 115%;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 8px;
-  height: 8px;
-  background: #333;
-  z-index: 1000;
-}
-.tooltip {
-  position: relative;
-  cursor: pointer;
-}
-.tooltip::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 125%; /* Position above icon */
-  left: 50%;
-  transform: translateX(-50%);
-  background: #333;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  white-space: nowrap;
-  opacity: 1; /* Always visible */
-  pointer-events: none;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 8px;
-}
-
-/* Optional: Add arrow */
-.tooltip::before {
-  content: "";
-  position: absolute;
-  bottom: 115%;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 8px;
-  height: 8px;
-  background: #333;
-  z-index: 1000;
-}
-
 .btn {
   padding: 6px 16px;
   border: none;
@@ -396,9 +348,10 @@ body {
   background-color: var(--border);
   border-radius: 12px;
   margin: 0 30px 30px 30px;
+   
 }
-.table-main-container {
-  height: 500px;
+.table-main-container{
+    height: 500px;
 }
 .rules-table {
   width: 100%;
